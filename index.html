@@ -1,6 +1,68 @@
-<html>
-<head>My Own Test</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Highlighted Menu</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #b3ecff; /* Light blue background */
+        }
+
+        .menu {
+            position: absolute;
+            top: 20%;
+            left: 10%;
+            font-size: 20px;
+            line-height: 2;
+        }
+
+        .menu-item {
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+
+        .highlight-container {
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+
+        .highlight {
+            font-size: 40px;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin: 10px 0;
+            padding: 10px 20px;
+        }
+
+        .highlight-about {
+            background-color: #ffffcc; /* Yellow highlight */
+            color: #fff;
+        }
+
+        .highlight-home {
+            background-color: #ccffcc; /* Green highlight */
+            color: #fff;
+        }
+    </style>
+</head>
 <body>
-<p>Hello World</p>
+    <div class="menu">
+        <p class="menu-item">Home</p>
+        <p class="menu-item">About us</p>
+        <p class="menu-item">Health</p>
+        <p class="menu-item">Happy</p>
+        <p class="menu-item">Shine</p>
+    </div>
+
+    <div class="highlight-container">
+        <div class="highlight highlight-about">About Us</div>
+        <div class="highlight highlight-home">Home</div>
+    </div>
 </body>
 </html>
